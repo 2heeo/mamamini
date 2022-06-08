@@ -1,0 +1,36 @@
+/* icon */
+.ico_mmn {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  background: url('@/static/ico_mamamini.png') no-repeat;
+  background-size: 170px 50px;
+  text-indent: -9999px;
+  vertical-align: top;
+}
+.ico_blog {
+  width: 25px;
+  height: 25px;
+  background-position: 0 0;
+}
+.ico_insta {
+  width: 25px;
+  height: 25px;
+  background-position: -25px 0;
+}
+.ico_tel {
+  width: 25px;
+  height: 25px;
+  background-position: -50px 0;
+}
+.ico_pin {
+  width: 18px;
+  height: 25px;
+  background-position: -75px 0;
+}
+.ico_time {
+  width: 25px;
+  height: 25px;
+  background-position: -85px 0;
+}
