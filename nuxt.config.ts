@@ -14,15 +14,15 @@ export default defineNuxtConfig({
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
-    ]
+    ],
   },
   vite: {
     css: {
-        preprocessorOptions: {
-            scss: {
-                additionalData: '@import "@/assets/style/global.scss";',
-            },
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/style/global.scss";',
         },
+      },
     },
   },
   components: {
