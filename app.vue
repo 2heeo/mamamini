@@ -7,7 +7,7 @@
     <div class="container-doc">
       <NuxtLayout name="header"/>
       <main class="doc-main">
-        <NuxtPage /> <!-- pages의 index.vue -->
+        <NuxtPage />
       </main>
       <NuxtLayout name="footer"/>
     </div>

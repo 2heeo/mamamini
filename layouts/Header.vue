@@ -36,9 +36,7 @@
       .link_home {
         display: table-cell;
         padding: 0 60px;
-        // font-family: 'Roboto';
-        font-weight: 400;
-        color: $color-white;
+        color: #222;
         vertical-align: middle;
       }
     }
@@ -63,7 +61,7 @@
       }
       .link_menu {
         position: relative;
-        color: $color-white;
+        color: #222;
         font-weight: 400;
         font-size: 20px;
         &:hover {
