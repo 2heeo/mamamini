@@ -19,7 +19,4 @@
     position: relative;
     overflow: hidden;
   }
-  .doc-main {
-    padding-bottom: 120px;
-  }
 </style>

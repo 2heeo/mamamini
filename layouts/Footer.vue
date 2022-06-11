@@ -4,22 +4,25 @@
       <div class="cont_fnb">
         <h2 class="screen_out">하단메뉴</h2>
         <ul class="doc-fnb">
-          <li><NuxtLink class="link_fnb">더미더미더미</NuxtLink></li>
-          <li><NuxtLink class="link_fnb">더미더미더미</NuxtLink></li>
-          <li><NuxtLink class="link_fnb">더미더미더미</NuxtLink></li>
-          <li><NuxtLink class="link_fnb">더미더미더미</NuxtLink></li>
-          <li><NuxtLink class="link_fnb">더미더미더미</NuxtLink></li>
-        </ul>
-        <ul class="list_sns">
-          <li><NuxtLink :to="snsData.blogHref" class="link_fnb"><span class="ico_mmn ico_blog">작가 블로그</span></NuxtLink></li>
+          <li>
+            <span class="ico_mmn ico_blog"></span>
+            <div class="wrap_sns">
+              <NuxtLink :to="snsData.blogHref" class="link_fnb">작가 블로그</NuxtLink>
+            </div>
+          </li>
           <li>
             <span class="ico_mmn ico_insta">인스타그램</span>
-            <ul class="list_insta">
-              <li v-for="insta in snsData.instagram" :key="insta">
-                <NuxtLink :to="insta.href" class="link_fnb">{{insta.title}}</NuxtLink>
-              </li>
-            </ul>
+            <div class="wrap_sns">
+              <NuxtLink :to="insta.href" v-for="insta in snsData.instagram" :key="insta" class="link_fnb">{{insta.title}}</NuxtLink>
+            </div>
           </li>
+        </ul>
+        <ul class="info_place">
+          <li><span class="ico_mmn ico_wifi"></span><span class="txt_cv">와이파이존</span></li>
+          <li><span class="ico_mmn ico_kids"></span><span class="txt_cv">예스키즈존</span></li>
+          <li><span class="ico_mmn ico_parking"></span><span class="txt_cv">주차가능</span></li>
+          <li><span class="ico_mmn ico_wc"></span><span class="txt_cv">남녀 구분 화장실</span></li>
+          <li><span class="ico_mmn ico_pet"></span><span class="txt_cv">애견동반</span></li>
         </ul>
       </div>
       <small>&copy;MAMAmini. All rights reserved.</small>
@@ -57,23 +60,24 @@
 
 <style lang="scss" scoped>
   .doc-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 50px;
+    padding: 30px 50px;
     background: $color-dark;
     box-sizing: border-box;
     .link_fnb {
-        color: $color-white;
-      }
+      display: block;
+      margin-top: 5px;
+      color: $color-white;
+    }
     .cont_fnb {
-      padding: 10px 0;
+      margin-bottom: 20px;
       @include clearfix;
     }
     .doc-fnb {
       float: left;
       @include clearfix;
+      .ico_mmn {
+        float: left;
+      }
       li {
         float: left;
         &+li {
@@ -81,45 +85,36 @@
         }
       }
     }
-    .list_sns {
+    .wrap_sns {
+      display: inline-block;
+      margin-left: 10px;
+      min-width: 120px;
+    }
+    .info_place {
       float: right;
-      .list_insta {
-        display: none;
-        li {
-          position: relative;
-          float: left;
-          margin-top: 8px;
-          padding: 0 8px;
-          &::before {
-            position: absolute;
-            top: 9px;
-            left: 0;
-            margin-right: 0 4px;
-            width: 2px;
-            height: 2px;
-            background: $color-white;
-            content: '';
-          }
-        }
-      }
-      &:hover {
-        .list_insta { // todo-heeo. 어떻게 처리 할 것인가..
-          display: block;
-        }
-      }
       @include clearfix;
       li {
         float: left;
         &+li {
           padding-left: 10px;
         }
-      }      
+        &:hover { // todo-heeo. 에니메이션 효과
+          .txt_cv {
+            display: block;
+          }
+        }
+        .txt_cv {
+          display: none;
+          color: $color-white;
+        }    
+      }
     }
     small {
       display: block;
-      padding: 20px;
+      padding-top: 30px;
       text-align: center;
       color: $color-white;
+      font-size: 16px;
       border-top: 1px solid $color-white;
       box-sizing: border-box;
     }

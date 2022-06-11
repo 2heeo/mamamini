@@ -84,7 +84,7 @@
 
 <style lang="scss" scoped>
   .cont_location {
-    padding: 0 300px;
+    padding: 50px 0;
     background: $color-bg;
     box-sizing: border-box;
   }
@@ -94,25 +94,17 @@
     text-align: center;
     color: $color-dark;
     font-size: 40px;
-    font-weight: 700;
-    font-family: NotoSansKR;
   }
   .cont_info {
-    display: flex;
+    width: 1200px;
+    margin: 0 auto;
   }
   .map_mmn {
-    flex: 1;
-    width: 300px;
+    width: 100%;
     height: 300px;
   }
   .wrap_info {
-    flex: 1;
-    margin-left: 30px;
-    padding: 20px;
-    width: 500px;
-    height: 300px;
-    background: $color-white;
-    border-radius: 10px;
+    padding: 20px 0;
   }
   .dl_comm {
     display: table-row;
