@@ -7,11 +7,16 @@
     <div class="container-doc">
       <NuxtLayout name="header"/>
       <main class="doc-main">
-        <NuxtLayout>
-          <NuxtPage /> <!-- pages의 index.vue -->
-        </NuxtLayout>
+        <NuxtPage />
       </main>
       <NuxtLayout name="footer"/>
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+  .container-doc {
+    position: relative;
+    overflow: hidden;
+  }
+</style>

@@ -1,0 +1,76 @@
+/* icon */
+.ico_mmn {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  background: url('@/static/ico_mamamini.png') no-repeat;
+  background-size: 140px 110px;
+  text-indent: -9999px;
+  vertical-align: top;
+}
+.ico_blog {
+  width: 25px;
+  height: 25px;
+  background-position: 0 0;
+}
+.ico_insta {
+  width: 25px;
+  height: 25px;
+  background-position: -25px 0;
+}
+.ico_tel {
+  width: 25px;
+  height: 25px;
+  background-position: -50px 0;
+}
+.ico_pin {
+  width: 18px;
+  height: 25px;
+  background-position: -75px 0;
+}
+.ico_time {
+  width: 25px;
+  height: 25px;
+  background-position: -95px 0;
+}
+.ico_prev {
+  width: 55px;
+  height: 55px;
+  background-position: 0 -25px;
+}
+.ico_next {
+  width: 55px;
+  height: 55px;
+  background-position: -55px -25px;
+}
+.ico_lang {
+  width: 25px;
+  height: 25px;
+  background-position: 0 -25px;
+}
+.ico_wifi {
+  width: 31px;
+  height: 25px;
+  background-position: -85px -80px;
+}
+.ico_wc {
+  width: 30px;
+  height: 25px;
+  background-position: 0 -80px;
+}
+.ico_parking {
+  width: 25px;
+  height: 25px;
+  background-position: -60px -80px;
+}
+.ico_kids {
+  width: 18px;
+  height: 25px;
+  background-position: -120px 0;
+}
+.ico_pet {
+  width: 30px;
+  height: 30px;
+  background-position: -30px -80px;
+}
